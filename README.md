@@ -12,7 +12,7 @@ The program will prompt you to enter your PIN. If the PIN is valid, you will be 
 # EXPLANATION
 The program starts by including the following header files:
 
-C++
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -30,7 +30,7 @@ fstream: File stream
 iomanip: Formatted output
 The next part of the program defines the following functions:
 
-C++
+
 void clear();
 string get_current_date_time();
 int get_pin();
@@ -41,7 +41,7 @@ void check_balance();
 void withdraw();
 void transfer();
 void log_transaction(string transaction_type);
-Use code with caution. Learn more
+
 These functions are used to:
 
 Clear the screen
@@ -56,7 +56,7 @@ Perform the transfer operation
 Log the transaction
 The main function of the program is as follows:
 
-C++
+
 int main() {
     // Clear the screen
     clear();
@@ -108,5 +108,5 @@ int main() {
 
     return 0;
 }
-Use code with caution. Learn more
+
 This function first clears the screen, then gets the current date and time. It then prints the welcome message and gets the PIN from the user. The PIN is then checked against a list of valid PINs. If the PIN is valid, the menu of options is printed and the user is prompted to enter their choice. The program then switches on the user's choice and calls the appropriate function. If the PIN is invalid, the Invalid PIN! message is displayed.
